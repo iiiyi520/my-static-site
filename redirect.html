@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转到小程序</title>
+    <script type="text/javascript">
+        // 在页面加载时执行跳转
+        window.onload = function() {
+            // 替换以下内容为您的小程序链接
+            var appId = "wx1c1ee173482b5327"; // 小程序的 AppID
+            var pagePath = "subpackages/detail/index?orderNo=D90091262885123530752&userId=1022163837779947520"; // 页面路径
+            var miniProgramLink = "weixin://dl/business/?appid=" + appId + "&page=" + encodeURIComponent(pagePath);
+            window.location.href = miniProgramLink; // 跳转链接
+        };
+    </script>
+</head>
+<body>
+    <p>正在跳转到小程序，请稍候...</p>
+</body>
+</html>
